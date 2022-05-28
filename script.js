@@ -2,14 +2,20 @@ const part1 = document.getElementById('part-1');
 const part2 = document.getElementById('part-2');
 const part3 = document.getElementById('part-3');
 
+// Form submit button in Assignment-2
+const formSubmit = document.getElementById('form-submit');
+
+// Elements to be used in Assignment-3
 const nameAscending = document.getElementById('name-ascending');
 const nameDescending = document.getElementById('name-descending');
 const priceAscending = document.getElementById('price-ascending');
 const priceDescending = document.getElementById('price-descending');
 const categoryAscending = document.getElementById('category-ascending');
 const categoryDescending = document.getElementById('category-descending');
+// array to store Assignment-3 API data response
+let apiData = [];
 
-let apiData = []
+// HELPER FUNCTIONS
 
 // Show selected assignment
 function showSelectedAssignment(e) {
@@ -99,10 +105,13 @@ function sortTableAndDisplay(key, type) {
 
 // EVENT LISTENERS
 
-// To show desired assignment
-part1.addEventListener('click', showSelectedAssignment)
-part2.addEventListener('click', showSelectedAssignment)
-part3.addEventListener('click', fetchTableDataAndShow)
+// To show desired assignment from Navigation bar
+part1.addEventListener('click', showSelectedAssignment);
+part2.addEventListener('click', showSelectedAssignment);
+part3.addEventListener('click', fetchTableDataAndShow);
+
+// Disabling form submit event
+formSubmit.addEventListener('click', (e) => e.preventDefault());
 
 
 // To Sort required field in desired manner in Assignment-3

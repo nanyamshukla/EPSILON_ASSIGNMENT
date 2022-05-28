@@ -25,6 +25,7 @@ header {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 60%);;
+    padding: 10px;
 }
 
 nav {
@@ -52,14 +53,30 @@ nav button:hover {
     border-radius: 4px;
 }
 
-main {
+/* main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-}
+} */
 
 section {
     display: none;
+}
+
+section div, form {
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 1em;
+    }
 }
