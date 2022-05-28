@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Epsilon UX Front-End Developer Challenge
+        </h1>
+    </header>
+    <nav>
+        <button id="part-1" value="assignment-1">Part 1</button>
+        <button id="part-2" value="assignment-2">Part 2</button>
+        <button id="part-3" value="assignment-3">Part 3</button>
+    </nav>
+    <main id="main">
+        <section id="assignment-1">
+            <h2>Part 1: Card Component</h2>
+            <div class="card-component">
+                <img class="card-img" src="https://images.unsplash.com/photo-1513904178077-6c5730ddd446?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80">
+                <div class="img-info">
+                    <span class="img-title">Beach Day</span>
+                    <span class="img-subtitle">Rufus the dog</span>
+                    <span class="img-time">Modified <time>02/28/2019</time> by bfrost</span>
+                </div>
+            </div>
+        </section>
+        <section id="assignment-2">
+            <h2>Part 2: Form Component 2</h2>
+            <div class="form-component">
+                <form id="form">
+                    <div class="form-component">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="name" placeholder="Enter Name">
+                    </div>
+                    <div class="form-component">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-component">
+                        <label for="name">Phone Number</label>
+                        <input type="number" id="number" class="name" placeholder="Enter Phone Number">
+                    </div>
+                    <div class="form-component">
+                        <label for="password-1">Password</label>
+                        <input type="password" id="password-1" class="name" placeholder="Enter Password" autocomplete="off">
+                    </div>
+                    <div class="form-component">
+                        <label for="password-2">Confirm Password</label>
+                        <input type="password" id="password-2" class="name" placeholder="Confirm Password" autocomplete="off">
+                    </div>
+                    <button type="submit" class="save">Save</button>
+                </form>
+            </div>
+        </section>
+        <section id="assignment-3">
+            <h2>Part 3: Table Functions</h2>
+            <div class="table-component">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <div>
+                                    Product Name
+                                    <span>
+                                        <i class="fa-solid fa-caret-up" id="name-ascending"></i>
+                                        <i class="fa-solid fa-caret-down" id="name-descending"></i>
+                                    </span>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div>
+                                    Price
+                                    <span>
+                                        <i class="fa-solid fa-caret-up" id="price-ascending"></i>
+                                        <i class="fa-solid fa-caret-down" id="price-descending"></i>
+                                    </span>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div>
+                                    Category
+                                    <span>
+                                        <i class="fa-solid fa-caret-up" id="category-ascending"></i>
+                                        <i class="fa-solid fa-caret-down" id="category-descending"></i>
+                                    </span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/fontawesome.min.js" integrity="sha512-5qbIAL4qJ/FSsWfIq5Pd0qbqoZpk5NcUVeAAREV2Li4EKzyJDEGlADHhHOSSCw0tHP7z3Q4hNHJXa81P92borQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

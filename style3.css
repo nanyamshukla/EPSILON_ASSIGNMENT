@@ -1,0 +1,85 @@
+table {
+    table-layout: fixed;
+    width: 30%;
+    min-width: 500px;
+    margin: 0 auto;
+    border: 1px solid rgba(0 0 0 / 20%);
+    border-collapse: collapse;
+    color: #666666;
+}
+
+thead th {
+    text-align: left;
+    font-weight: bold;
+}
+  
+thead th:nth-child(1) {
+    width: 40%;
+}
+  
+thead th:nth-child(2) {
+    width: 40%;
+}
+  
+thead th:nth-child(3) {
+    width: 20%;
+}
+
+thead tr {
+    background-color: #F7F7F7;
+}
+
+tr:nth-child(even) {
+    background-color: #F7F7F7;
+}
+
+th, td {
+    font-size: 14px;
+    padding: 14px 0 13px;
+    font-weight: normal;
+}
+
+/* table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+} */
+
+th:first-child, td:first-child {
+    padding-left: 24px;
+}
+
+th:last-child, td:last-child {
+    padding-right: 24px;
+}
+
+th span {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+thead th div {
+    display: flex;
+    align-items: center;
+}
+
+thead th div span {
+    margin-left: 15px;
+    height: 1em;
+}
+
+thead th div span i {
+    cursor: pointer;
+    font-size: 10px;
+    height: 7px;
+}
+
+thead th div span i.icon-clicked {
+    color: #0063E6;
+}
+
+thead th div span i.icon-clicked:hover {
+    color: #F0F6FF;
+}
